@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href=".//css/style.css">
+    <title>JS Project</title>
+</head>
+<body>
+    <div class="container-1">
+        <h2>Challenge 1 : Your Age In Days</h2>
+        <div class="flexbox-container-1">
+            <div class="button-1">
+                <button class="btn btn-primary" onclick="daycount()">Click me</button>
+            </div>
+            <div class="button-2">
+                <button class="btn btn-danger" onclick="reset()">Reset</button>
+            </div>
+        </div>
+        <div class="flexbox-container-1">
+            <h2 id="result">0</h2>
+        </div>
+    </div>
+
+    <div class="container-2">
+        <h2>Challenge 2 : Image Generator</h2>
+        <div class="flexbox-container-2">
+            <button class="btn btn-success" onclick="generator()">Generate</button>
+        </div>
+        <div class="flexbox-image" id="image-generator">          
+        </div>
+    </div>
+
+    <div class="container-3">
+        <h2>Challenge 3 : Rock Paper Scissors</h2>
+        <div class="flexbox-rps" id="flexbox-rps-div">
+            <img id="rock" src="./images/rock-clipart-alpine-landscape-rock-rubble-01b-al1.png" alt="" width="150" height="150" onclick="startgame(this)">
+            <img id="paper" src="./images/paper-clip-art-4i9kbAxiE.png" alt="" width="150" height="150" onclick="startgame(this)">
+            <img id="scissors" src="./images/netclipart.com-peace-sign-clipart-black-1178812.png" alt="" width="150" height="150" onclick="startgame(this)">
+        </div>
+    </div>
+
+    <div class="container-4">
+        <h2>Challenge 4 : Change Buttons Colour</h2>
+        <div class="flexbox-container-4">
+            <form action="">
+                <select name="Select" id="button-color" onchange="changeColour(this)">
+                    <option value="random">Random</option>
+                    <option value="red">Red</option>
+                    <option value="green">Green</option>
+                    <option value="reset">Reset</option>
+                </select>
+            </form>
+            <button class="btn btn-primary">Google</button>
+            <button class="btn btn-success">Facebook</button>
+            <button class="btn btn-warning">Twitter</button>
+            <button class="btn btn-danger">Youtube</button>
+        </div>
+    </div>
+
+    <div class="container-5">
+        <h2>Challenge 5 : BlackJack</h2>
+        <h3><span id="blackjack-result">Let's Play</span></h3>
+
+        <div class="flex-blackjack-row-1">
+            <div id="yourbox">
+                <h2>You : <span id="your-result">0</span></h2>
+            </div>
+
+            <div id="botbox">
+                <h2>Dealer : <span id="bot-result">0</span></h2>
+            </div>
+        </div>
+
+        <div class="flex-blackjack-row-2">
+            <div>
+                <button class="btn-lg btn-primary mr-2" id="hit-button" >Hit</button>
+                <button class="btn-lg btn-warning mr-2" id="stand-button" >Stand</button>
+                <button class="btn-lg btn-danger" id="deal-button" >Deal</button>
+            </div>
+        </div>
+
+        <div class="flex-blackjack-row-3">
+            <table>
+                <tr>
+                    <th>Wins</th>
+                    <th>Losses</th>
+                    <th>Draws</th>
+                </tr>
+                <tr>
+                    <td><span id="wins">0</span></td>
+                    <td><span id="losses">0</span></td>
+                    <td><span id="draws">0</span></td>
+                </tr>
+            </table>
+        </div>
+    </div>
+
+
+    <script src=".//js/sample.js">
+    </script>
+</body>
+</html>
