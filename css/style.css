@@ -36,6 +36,14 @@
     box-shadow: 0px 10px 50px rgb(14, 17, 201);
 }
 
+.flexbox-container-4 button,select{
+   margin: 10px;
+}
+
+.flex-blackjack-row-2 button{
+    margin: 10px;
+}
+
 .flex-blackjack-row-1, .flex-blackjack-row-2{
     background: url('https://cdn.wallpapersafari.com/50/43/IdhtoN.jpg') center;
     color: #ffffff;
